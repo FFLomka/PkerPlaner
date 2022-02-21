@@ -1,0 +1,57 @@
+.root {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		margin: 1rem 2rem;
+		align-items: center;
+		font-size: 1.2rem;
+
+		.title {
+			font-size: 1.5em;
+			font-weight: 600;
+		}
+
+		.voting {
+			color: #0005;
+			line-height: rem;
+
+			span {
+				color: #333;
+				margin-left: 0.5em;
+			}
+		}
+
+		.right {
+			display: flex;
+			align-items: center;
+			gap: 2em;
+
+			.user {
+				font-weight: 500;
+			}
+		}
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+
+		.cards {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 3rem;
+		}
+	}
+
+	footer {
+		margin: 2rem;
+	}
+}

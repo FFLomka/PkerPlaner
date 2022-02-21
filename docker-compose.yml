@@ -1,0 +1,14 @@
+version: "3"
+services:
+    app:
+        build:
+            context: .
+        ports:
+            - 4008:3000
+        restart: always
+    ws:
+        build:
+            context: .
+        ports:
+            - 5008:3001
+        restart: always

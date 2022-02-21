@@ -1,0 +1,50 @@
+{
+	"name": "shavacore",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"ws": "node ./core/websocket/index.js",
+		"wsdev": "nodemon ./core/websocket/index.js"
+	},
+	"dependencies": {
+		"@ant-design/icons": "^4.7.0",
+		"@reduxjs/toolkit": "^1.7.1",
+		"@zeit/next-css": "^1.0.1",
+		"@zeit/next-less": "^1.0.1",
+		"@zeit/next-sass": "^1.0.1",
+		"antd": "^4.18.2",
+		"babel-plugin-import": "^1.13.3",
+		"less": "^4.1.2",
+		"lodash": "^4.17.21",
+		"mongodb": "^4.3.0",
+		"next": "12.0.7",
+		"next-plugin-antd-less": "^1.7.0",
+		"null-loader": "^4.0.1",
+		"qs": "^6.10.2",
+		"raw-loader": "^4.0.2",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-redux": "^7.2.6",
+		"sass": "^1.49.7",
+		"socket.io": "^4.4.1",
+		"socket.io-client": "^4.4.1",
+		"url-loader": "^4.1.1",
+		"uuid": "^8.3.2"
+	},
+	"devDependencies": {
+		"eslint": "8.6.0",
+		"eslint-config-next": "12.0.7",
+		"import-sort-style-module": "^6.0.0",
+		"nodemon": "^2.0.13",
+		"prettier": "^2.3.1",
+		"prettier-plugin-import-sort": "^0.0.7"
+	},
+	"importSort": {
+		".js, .jsx, .ts, .tsx": {
+			"style": "module"
+		}
+	}
+}

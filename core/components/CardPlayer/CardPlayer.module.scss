@@ -1,0 +1,34 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #0af;
+		font-size: 2rem;
+		width: 4rem;
+		height: 6rem;
+		border-radius: 1rem;
+		user-select: none;
+
+		&.nopick {
+			background-color: #0002;
+		}
+
+		&.pick {
+			background-color: #0af;
+		}
+
+		&.show {
+			border: #0af solid 2px;
+		}
+	}
+
+	.name {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+}

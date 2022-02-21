@@ -9,6 +9,8 @@ services:
     ws:
         build:
             context: .
+            dockerfile: Dockerfile-node
         ports:
             - 5008:3001
         restart: always
+        command: yarn ws
